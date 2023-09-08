@@ -69,7 +69,7 @@ h1{
     width: 250px;
     position: relative;
     top: 0%;
-    left: 37%;
+    left: 57%;
 }
 .container .contact{
     margin-bottom: 100px;
@@ -81,9 +81,8 @@ h1{
 
 }
 .container .projects button{
-    position: relative;
     top: 40%;
-    left: 23%;
+    left: 43%;
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid black;
