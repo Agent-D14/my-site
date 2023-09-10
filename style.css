@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+nav li a:active{
+    color: #131a2c;
+}
 nav{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
@@ -138,3 +141,15 @@ h1{
 .container .right button:hover{
     background-color: #AF9AB2;
 }
+.contact{
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+    background-color: #131a2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+

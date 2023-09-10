@@ -13,14 +13,45 @@
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="projects.html">Projects</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                  </li>
               </ul>
         </nav>
 
+        <!--CONTACT FORM-->
+        <div class="contact-container">
+            
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Get In Touch</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Phone No.">
+                <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "danielleonwuka@gmail.com",
+                    Password : "popolocks14",
+                    To : 'danielleonwuka@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Entry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
     </body>
 </html>
