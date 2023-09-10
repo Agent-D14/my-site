@@ -16,6 +16,18 @@ h1{
 .container span{
     font-weight: 200;
 }
+.container .home{
+    position: relative;
+    float: right;
+    top: 100px;
+    z-index: 5;
+}
+.container .profile{
+    position: relative;
+    top: 90px;
+    left: 220px;
+    z-index: 3;
+}
 .container .title{
     display: flex;
     width: 100%;
@@ -25,6 +37,7 @@ h1{
     align-items: center;
     justify-content: end;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.424);
+    z-index: 0;
 }
 .container .title h5{
     padding-right: 20px;
@@ -32,10 +45,13 @@ h1{
 .container .about{
     width: 100%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 160px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: #131a2c;
+    color: white;
 }
 .container .about .content{
     padding-top: 1px;
@@ -47,12 +63,6 @@ h1{
     align-items: center;
     margin-top: 50px;
 }
-.container .about-box{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: center;
-}
 .container .about img{
     width: 50%;
     margin-left: 200px;
@@ -60,9 +70,7 @@ h1{
 .container .projects{
     width: 100%;
     height: 400px;
-    background-color: #131a2c;
     border-radius: 5px;
-    color: white;
     margin-top: 150px;
 }
 .projects img{
@@ -81,8 +89,9 @@ h1{
 
 }
 .container .projects button{
-    top: 40%;
-    left: 43%;
+    position: relative;
+    top: 60px;
+    left: 45%;
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid black;
